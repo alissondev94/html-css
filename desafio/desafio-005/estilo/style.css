@@ -1,5 +1,26 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'fonte01';
+    src: url('/desafio/desafio-005/fontes/Cardinal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fonte02';
+    src: url('/desafio/desafio-005/fontes/Cardinal-Alternate.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fonte03';
+    src: url('/desafio/desafio-005/fontes/Sriracha-Regular.ttf') format('truetype');
+}
+
+:root{
+    --fonte-01:'fonte01', cursive;
+    --fonte-02:'fonte02', cursive;
+    --fonte-03:'fonte03', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,11 +35,14 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte-03);
+    line-height: 2em;
 }
 
 header > h1{
     padding-top: 50px;
-    font-variant: small-caps;
+    padding-bottom: 10px;
+    font-family:var(--fonte-01);
 }
 
 header > p{
@@ -40,6 +64,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte-03);
 }
 
 section.normal{
@@ -53,7 +78,8 @@ section.imagem{
 }
 
 section.imagem >p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.233);
 }
 
@@ -62,4 +88,5 @@ footer{
     color: white;
     text-align: center;
     padding: 10px ;
+    font-family: var(--fonte-03);
 }
