@@ -25,18 +25,23 @@
 
         }
 
+        th#populaçao{
+            width: 90px;
+        }
+
         td.num{
             text-align: right;
         }
     </style>
 </head>
 <body>
-    <h1>Tabela de População por Estado</h1>
+    <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativais.</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" id="populaçao">População</th>
             </tr>
         </thead>
         <tbody>
@@ -151,7 +156,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>210 147 125</strong></td>
             </tr>
         </tfoot>
