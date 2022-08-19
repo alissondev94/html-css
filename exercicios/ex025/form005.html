@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M">
+            <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label>
+        </fieldset>
+        <Fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Fultebol</label><br>
+            <label for="ibasq"><input type="checkbox" name="basq" id="ibasq"> Basquete<br></label>
+            <input type="checkbox" name="tenis" id="itenis"><label for="itenis"> Tenis</label><br>
+            <input type="checkbox" name="vol" id="ivol"><label for="ivol"> Volei</label><br>
+            <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label><br>
+            <input type="checkbox" name="corri" id="icorri"> <label for="icorri">Corrida</label><br>
+            <input type="checkbox" name="cicli" id="icicl"> <label for="icicl">Ciclismo</label>
+        </Fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
